@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    tools:context="com.example.rabedi.instagramviewer.PhotoChildActivity">
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ivUser"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--app:riv_corner_radius="10dip"-->
+            <!--app:riv_border_width="1dip"-->
+            <!--app:riv_border_color="#333333"-->
+            <!--app:riv_mutate_background="true"-->
+            <!--app:riv_oval="true"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--android:padding="5dp" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="211dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/tvUsername"-->
+            <!--android:text="Username"-->
+            <!--android:gravity="center|left"-->
+            <!--android:textSize="20dp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:onClick="onImageClick"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caption"
+        android:id="@+id/tvCaption"
+        android:layout_weight="1"
+        android:layout_below="@+id/imageView"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:id="@+id/tvComments"
+        android:layout_below="@+id/tvCaption"
+        android:layout_weight="1"
+        />
+
+
+</RelativeLayout>
