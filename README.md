@@ -1,4 +1,4 @@
-# Project 1 - *InstagramViwer*
+# Project 1 - *InstagramViewer*
 
 **InstagramViewer** is an android app that allows a user to check out popular photos from Instagram. The app utilizes Instagram API to display images and basic image information to the user.
 
@@ -41,5 +41,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+
+Forgot to add the Internet permissions for the app,which caused the Http client to fail
+Didn't set the swipe view refresh false on success ,so it was continuously displaying the refresh circle.
 
 
